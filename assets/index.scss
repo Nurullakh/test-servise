@@ -1,0 +1,57 @@
+@import 'lib/reset.scss';
+
+html,
+body,
+#__nuxt,
+#__layout {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border: none;
+  color: #11c86f;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #11c86f;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 12px 26px;
+  border-radius: 5px;
+  &:hover {
+    border-color: #0da85d;
+    transition: all 0.2s ease-out;
+  }
+  &:active {
+    color: #11c86f;
+    border-color: #11c86f;
+  }
+  &_red {
+    color: #fff;
+    background-color: #e30613;
+    border: none;
+    &:hover {
+      background-color: #ff0008;
+      transition: background-color 0.2s ease-out;
+    }
+    &:active {
+      color: #fff;
+      background-color: #a9070c;
+    }
+    &.button_loading {
+      background-color: #e30613;
+    }
+  }
+}
+
+.error {
+  border-color: red !important;
+}
